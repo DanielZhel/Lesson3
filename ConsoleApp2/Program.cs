@@ -1,9 +1,15 @@
 ﻿Console.Title = "Calculator";
-while (true)
+
+string act,c;
+double a, b;
+
+c = "+";
+
+double[] fiveREZ = new double[5];
+
+while (c == "+")
 {
     Console.Clear();
-    string act;
-    double a, b;
 
     try // checking data type
     {
@@ -45,9 +51,16 @@ while (true)
             Console.WriteLine("No valid action. Try again!");
             break;
     }
-    Console.ReadLine();
-}
 
+    Console.WriteLine("If you want to continue calculations PRESS +, otherwise PRESS -!");
+    c = Console.ReadLine();
+
+        if (c == "+" )
+        {
+            c = "+";
+        }
+
+}
 
 
     
